@@ -1,3 +1,29 @@
+<?php
+require 'connection.php';
+
+if (isset($_POST["submit"])) {
+    $locat = $_POST["locat"];
+    $travcount = $_POST["travcount"];
+    $flightname = $_POST["flightname"];
+    $flightnum = $_POST["flightnum"];
+    $seatnum = $_POST["seatnum"];
+    $traveldate = $_POST["traveldate"];
+
+    // $languages = $_POST["languages"];
+    // $language = "";
+    // foreach ($languages as $row) {
+    //     $language .= $row . ",";
+    // }
+
+    $query = "INSERT INTO first_face VALUES('', '$locat', '$travcount', '$flightname', '$flightnum', '$seatnum', '$traveldate')";
+    mysqli_query($conn, $query);
+    echo
+    "
+    <script> alert ('Data Inserted Successfully'); </script>
+    ";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +50,11 @@
                 <a href="traveladvisoty.html"><button class="btn2">Travel Advisory</button></a>
             </div>
             <div class="right">
+<<<<<<< HEAD:index.html
                 <form class="firstform">
+=======
+                <form action="connect.php" class="firstform" method="post">
+>>>>>>> 24457116f24228b206c48f10e528fcba4c78e5b7:index.php
                     <div class="loc" style="display: flex; margin: 10px 5px;">
                         <div class="arr">
                             <input type="radio" value="Arrival" class="arriv" style="margin-left: 30px;" name="locat">Arrival
@@ -77,7 +107,11 @@
                             <input type="date" placeholder="Travel date...." name="traveldate">
                         </div>
                     </div><br><br><br><br>
+<<<<<<< HEAD:index.html
                     <a href="/Registration Form/index.html" style="text-decoration: none;"><div class="btn1">Register</div></a>
+=======
+                    <button type="submit" class="btn1">Register</button>
+>>>>>>> 24457116f24228b206c48f10e528fcba4c78e5b7:index.php
                 </form>
             </div>
         </div>
