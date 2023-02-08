@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Phone Number</label>
+                            <label>Local Phone Number</label>
                             <input type="tel" id="phone" placeholder="Enter Phone number" required>
                         </div>
 
@@ -55,9 +55,14 @@
                             <label>Purpose of Travel</label>
                             <select required>
                                 <option disabled selected>Select purpose</option>
-                                <option>Education</option>
+                                <option>Conference</option>
+                                <option>Study</option>
+                                <option>Tourism</option>
+                                <option>Visit</option>
+                                <option>Work</option>
+                                <option>Business</option>
                                 <option>Medical</option>
-                                <option>Leave</option>
+                                <option>Other</option>
                             </select>
                         </div>
 
@@ -88,27 +93,27 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Have you been in china the past 21 days</label>
+                            <label>Country visited the past 21 days</label>
                             <select required>
-                                <option disabled selected>Have you been in china</option>
-                                <option>Yes</option>
-                                <option>No</option>
+                                <option disabled selected>Country visited pass 21 days</option>
+                                <option>SIerra leone</option>
+                                <option>Ghana</option>
                             </select>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
+                            <label>Permanent Mobile</label>
+                            <input type="tel" id="phone" placeholder="Enter Phone number" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
+                            <label>Number and Street Name</label>
+                            <input type="text" placeholder="Enter Number and Street Name" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
+                            <label>Appartment Number</label>
+                            <input type="text" placeholder="Enter Appartment Number" required>
                         </div>
                     </div>
 
@@ -210,6 +215,7 @@
     <script src="/phone-number-validation-master/build/js/intlTelInput.js"></script>
     <script>
         var input = document.querySelector("#phone");
+        
         window.intlTelInput(input,{});
     </script>
     
