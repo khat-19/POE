@@ -1,33 +1,3 @@
-<?php
-
-if (isset($_POST["submit"])) {
-
-   $fname = $_POST["fname"];
-   $mname = $_POST["mname"];
-   $lname = $_POST["lname"];
-   $gender = $_POST["gender"];
-   $locnum = $_POST["locnum"];
-   $pamnum = $_POST["pamnum"];
-   $countryvisit = $_POST["countryvisit"];
-   $purposeoftrav = $_POST["purposeoftrav"];
-   $numnstrt = $_POST["numnstrt"];
-   $appartnumb = $_POST["appartnumb"];
-   $city1 = $_POST["city1"];
-   $province1 = $_POST["province1"];
-   $country1 = $_POST["country1"];
-   $numnstreet1 = $_POST["numnstreet1"];
-   $district = $_POST["district"];
-   $symptoms = $_POST["symptoms"];
-   $postal = $_POST["postal"];
-   $lname1 = $_POST["lname1"];
-   $fname1 = $_POST["fname1"];
-   $city2 = $_POST["city2"];
-   $Country2 = $_POST["Country2"];
-   $phonenum = $_POST["phonenum"];
-   $email = $_POST["email"];
-   $phonenum = $_POST["phonenum"];
-}
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
